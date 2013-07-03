@@ -14,7 +14,7 @@
 
 @implementation WebBrowserViewController
 
-@synthesize mainMenuViewController, webView, webView2, pageControl, address1, address2;
+@synthesize mainMenuViewController, webView, webView2, address1, address2;
 
 
 - (void)viewDidLoad

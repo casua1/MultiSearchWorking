@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Phil. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "MainMenuViewController.h"
 #import "WebBrowserViewController.h"
 
@@ -15,7 +16,7 @@
 
 @implementation MainMenuViewController
 
-@synthesize webBrowserViewController, address1, address2, unfixedTerm, fixedTerm, column, pickerView;
+@synthesize webBrowserViewController, address1, address2, unfixedTerm, fixedTerm, column, pickerView, logo;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,6 +33,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    logo.layer.masksToBounds = YES;
+    logo.layer.cornerRadius = 57;
     column = [[NSMutableArray alloc] initWithObjects:@"Google", @"Yahoo", @"Bing", @"Ask", @"AOL", @"Dogpile", @"Duck Duck Go", nil];
 }
 
@@ -59,7 +62,6 @@
     //Set up Nav Controller styling.
     [self.navigationItem setTitle:@"MultiSearch"];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-    [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }
 
 
@@ -72,7 +74,7 @@
 
 -(IBAction)switchToWebBrowserView:(id)sender
 {
-    self.webBrowserViewController = [[WebBrowserViewController alloc] initWithNibName:@"WebBrowserViewController" bundle:nil];
+    self.webBrowserViewController = [[WebBrowserViewController alloc] initWithNibName:@"ContentController" bundle:nil];
     webBrowserViewController.address1 = address1;
     webBrowserViewController.address2 = address2;
     [self.navigationController pushViewController:self.webBrowserViewController animated:YES];

@@ -13,7 +13,6 @@
 @property (strong, nonatomic) UIViewController *mainMenuViewController;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UIWebView *webView2;
-@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (strong, nonatomic) NSString *address1;
 @property (strong, nonatomic) NSString *address2;
 
