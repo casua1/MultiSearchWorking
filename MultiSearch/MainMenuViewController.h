@@ -19,10 +19,12 @@
 @property (strong, nonatomic) NSString *unfixedTerm;
 @property (strong, nonatomic) NSString *fixedTerm;
 @property (strong, nonatomic) NSMutableArray *column;
+@property (strong, nonatomic) IBOutlet UITextField *searchField;
 @property (strong, nonatomic) IBOutlet UIImageView *logo;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 
 -(IBAction)switchToWebBrowserView:(id)sender;
 -(IBAction)getSearchTermAndRun:(id)sender;
+-(IBAction)hideKeyboard:(id)sender;
 
 @end

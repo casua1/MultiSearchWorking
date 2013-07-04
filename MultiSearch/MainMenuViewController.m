@@ -17,7 +17,7 @@
 
 @implementation MainMenuViewController
 
-@synthesize rootViewController, address1, address2, unfixedTerm, fixedTerm, column, pickerView, logo;
+@synthesize rootViewController, address1, address2, unfixedTerm, fixedTerm, column, pickerView, logo, searchField;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -86,11 +86,14 @@
 //Takes in the search term from the user and runs the search.
 -(IBAction)getSearchTermAndRun:(id)sender
 {
-    unfixedTerm = [sender text];
-    [sender resignFirstResponder];
+    unfixedTerm = searchField.text;
     [self fixTerm];
     [self setAddress];
     [self switchToWebBrowserView:nil];
+}
+
+- (IBAction)hideKeyboard:(id)sender {
+    [sender resignFirstResponder];
 }
 
 
