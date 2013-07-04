@@ -22,12 +22,17 @@
 		3F853718177CF5A100339D4F /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F853717177CF5A100339D4F /* WebBrowserViewController.m */; };
 		3FE457CC1781E3E7000B7C26 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE457CA1781E3E7000B7C26 /* MainMenuViewController.m */; };
 		3FE457CD1781E3E7000B7C26 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE457CB1781E3E7000B7C26 /* MainMenuViewController.xib */; };
-		3FE809ED1784BB6F00B32588 /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE809EB1784BB6F00B32588 /* ContentController.m */; };
-		3FE809EE1784BB6F00B32588 /* ContentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE809EC1784BB6F00B32588 /* ContentController.xib */; };
 		3FE809F21784BB8700B32588 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE809F01784BB8700B32588 /* RootViewController.m */; };
 		3FE809F71784BB9900B32588 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE809F51784BB9900B32588 /* MyViewController.m */; };
 		3FE809F81784BB9900B32588 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE809F61784BB9900B32588 /* MyViewController.xib */; };
 		3FE809FB1784BE7000B32588 /* content_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FE809FA1784BE7000B32588 /* content_iPhone.plist */; };
+		3FE80A261785C28C00B32588 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A251785C28B00B32588 /* small_one.png */; };
+		3FE80A281785D3A700B32588 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A271785D3A700B32588 /* RootViewController.xib */; };
+		3FE80A2E1785DB1500B32588 /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A291785DB1300B32588 /* small_five.png */; };
+		3FE80A2F1785DB1500B32588 /* small_four.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2A1785DB1300B32588 /* small_four.png */; };
+		3FE80A301785DB1500B32588 /* small_six.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2B1785DB1400B32588 /* small_six.png */; };
+		3FE80A311785DB1500B32588 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2C1785DB1400B32588 /* small_three.png */; };
+		3FE80A321785DB1500B32588 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2D1785DB1500B32588 /* small_two.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,15 +57,19 @@
 		3FE457C91781E3E7000B7C26 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		3FE457CA1781E3E7000B7C26 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		3FE457CB1781E3E7000B7C26 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
-		3FE809EA1784BB6F00B32588 /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
-		3FE809EB1784BB6F00B32588 /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
-		3FE809EC1784BB6F00B32588 /* ContentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentController.xib; sourceTree = "<group>"; };
 		3FE809EF1784BB8700B32588 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
 		3FE809F01784BB8700B32588 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
 		3FE809F41784BB9900B32588 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = ../MyViewController.h; sourceTree = "<group>"; };
 		3FE809F51784BB9900B32588 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyViewController.m; path = ../MyViewController.m; sourceTree = "<group>"; };
 		3FE809F61784BB9900B32588 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyViewController.xib; path = ../MyViewController.xib; sourceTree = "<group>"; };
 		3FE809FA1784BE7000B32588 /* content_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content_iPhone.plist; sourceTree = "<group>"; };
+		3FE80A251785C28B00B32588 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
+		3FE80A271785D3A700B32588 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		3FE80A291785DB1300B32588 /* small_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_five.png; sourceTree = "<group>"; };
+		3FE80A2A1785DB1300B32588 /* small_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_four.png; sourceTree = "<group>"; };
+		3FE80A2B1785DB1400B32588 /* small_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_six.png; sourceTree = "<group>"; };
+		3FE80A2C1785DB1400B32588 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
+		3FE80A2D1785DB1500B32588 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,13 +165,17 @@
 		3FE809F91784BBCD00B32588 /* Page Control */ = {
 			isa = PBXGroup;
 			children = (
-				3FE809EA1784BB6F00B32588 /* ContentController.h */,
-				3FE809EB1784BB6F00B32588 /* ContentController.m */,
-				3FE809EC1784BB6F00B32588 /* ContentController.xib */,
 				3FE809EF1784BB8700B32588 /* RootViewController.h */,
 				3FE809F01784BB8700B32588 /* RootViewController.m */,
+				3FE80A271785D3A700B32588 /* RootViewController.xib */,
 				3FE809F41784BB9900B32588 /* MyViewController.h */,
 				3FE809F51784BB9900B32588 /* MyViewController.m */,
+				3FE80A2B1785DB1400B32588 /* small_six.png */,
+				3FE80A291785DB1300B32588 /* small_five.png */,
+				3FE80A2A1785DB1300B32588 /* small_four.png */,
+				3FE80A2C1785DB1400B32588 /* small_three.png */,
+				3FE80A2D1785DB1500B32588 /* small_two.png */,
+				3FE80A251785C28B00B32588 /* small_one.png */,
 				3FE809F61784BB9900B32588 /* MyViewController.xib */,
 				3FE809FA1784BE7000B32588 /* content_iPhone.plist */,
 			);
@@ -228,9 +241,15 @@
 				3F05949117832E5A00BE4AF9 /* WebBrowserViewController.xib in Resources */,
 				3F0594941783829900BE4AF9 /* MultiSearchIcon.png in Resources */,
 				3F0594951783829900BE4AF9 /* MultiSearchIcon2x.png in Resources */,
-				3FE809EE1784BB6F00B32588 /* ContentController.xib in Resources */,
 				3FE809F81784BB9900B32588 /* MyViewController.xib in Resources */,
 				3FE809FB1784BE7000B32588 /* content_iPhone.plist in Resources */,
+				3FE80A261785C28C00B32588 /* small_one.png in Resources */,
+				3FE80A281785D3A700B32588 /* RootViewController.xib in Resources */,
+				3FE80A2E1785DB1500B32588 /* small_five.png in Resources */,
+				3FE80A2F1785DB1500B32588 /* small_four.png in Resources */,
+				3FE80A301785DB1500B32588 /* small_six.png in Resources */,
+				3FE80A311785DB1500B32588 /* small_three.png in Resources */,
+				3FE80A321785DB1500B32588 /* small_two.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +264,6 @@
 				3F85370F177CF5A100339D4F /* AppDelegate.m in Sources */,
 				3F853718177CF5A100339D4F /* WebBrowserViewController.m in Sources */,
 				3FE457CC1781E3E7000B7C26 /* MainMenuViewController.m in Sources */,
-				3FE809ED1784BB6F00B32588 /* ContentController.m in Sources */,
 				3FE809F21784BB8700B32588 /* RootViewController.m in Sources */,
 				3FE809F71784BB9900B32588 /* MyViewController.m in Sources */,
 			);

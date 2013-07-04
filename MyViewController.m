@@ -19,7 +19,7 @@
 // load the view nib and initialize the pageNumber ivar
 - (id)initWithPageNumber:(NSUInteger)page
 {
-    if (self = [super initWithNibName:@"MyView" bundle:nil])
+    if (self = [super initWithNibName:@"MyViewController" bundle:nil])
     {
         pageNumber = page;
     }

@@ -14,6 +14,8 @@ static NSString *kImageKey = @"imageKey";
 
 @interface RootViewController ()
 
+
+
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, strong) NSMutableArray *viewControllers;
@@ -23,9 +25,15 @@ static NSString *kImageKey = @"imageKey";
 
 @implementation RootViewController
 
+@synthesize contentList;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"content_iPhone" ofType:@"plist"];
+    self.contentList = [NSArray arrayWithContentsOfFile:path];
+    NSLog(@"%@", contentList);
     
     NSUInteger numberPages = self.contentList.count;
     
@@ -54,20 +62,11 @@ static NSString *kImageKey = @"imageKey";
     // load the visible page
     // load the page on either side to avoid flashes when the user starts scrolling
     //
+    NSLog(@"Attempting to Load.");
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
 }
-
-// rotation support for iOS 5.x and earlier, note for iOS 6.0 and later this will not be called
-//
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_6_0
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    // return YES for supported orientations
-    return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-#endif
-
+ 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
     // remove all the subviews from our scrollview
@@ -99,8 +98,12 @@ static NSString *kImageKey = @"imageKey";
 
 - (void)loadScrollViewWithPage:(NSUInteger)page
 {
-    if (page >= self.contentList.count)
+    NSLog(@"loadScrollViewWithPage initiated.");
+    if (page >= self.contentList.count){
+        NSLog(@"Page is less than contentList.");
         return;
+    }
+    NSLog(@"Went past first if");
     
     // replace the placeholder if necessary
     MyViewController *controller = [self.viewControllers objectAtIndex:page];
@@ -108,7 +111,10 @@ static NSString *kImageKey = @"imageKey";
     {
         controller = [[MyViewController alloc] initWithPageNumber:page];
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
+        NSLog(@"Replaced a placeholder.");
     }
+    
+    NSLog(@"Went past second if");
     
     // add the controller's view to the scroll view
     if (controller.view.superview == nil)
@@ -118,19 +124,28 @@ static NSString *kImageKey = @"imageKey";
         frame.origin.y = 0;
         controller.view.frame = frame;
         
+        NSLog(@"Set the frame.");
+        
         [self addChildViewController:controller];
         [self.scrollView addSubview:controller.view];
         [controller didMoveToParentViewController:self];
         
+        NSLog(@"Added subviews.");
+        
         NSDictionary *numberItem = [self.contentList objectAtIndex:page];
         controller.numberImage.image = [UIImage imageNamed:[numberItem valueForKey:kImageKey]];
         controller.numberTitle.text = [numberItem valueForKey:kNameKey];
+        
+        NSLog(@"Changed Variables.");
     }
+    
+    NSLog(@"Went past third if");
 }
 
 // at the end of scroll animation, reset the boolean used when scrolls originate from the UIPageControl
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    NSLog(@"scrollViewDidEndDecelerating");
     // switch the indicator when more than 50% of the previous/next page is visible
     CGFloat pageWidth = CGRectGetWidth(self.scrollView.frame);
     NSUInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
@@ -146,22 +161,26 @@ static NSString *kImageKey = @"imageKey";
 
 - (void)gotoPage:(BOOL)animated
 {
+    NSLog(@"gotoPage triggered.");
     NSInteger page = self.pageControl.currentPage;
     
     // load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
     [self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
     [self loadScrollViewWithPage:page + 1];
+    NSLog(@"Loaded pages.");
     
 	// update the scroll view to the appropriate page
     CGRect bounds = self.scrollView.bounds;
     bounds.origin.x = CGRectGetWidth(bounds) * page;
     bounds.origin.y = 0;
     [self.scrollView scrollRectToVisible:bounds animated:animated];
+    NSLog(@"Updated scrollView.");
 }
 
 - (IBAction)changePage:(id)sender
 {
+    NSLog(@"changePage triggered.");
     [self gotoPage:YES];    // YES = animate
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#include "ContentController.h"
+#import "RootViewController.h"
 #import "MainMenuViewController.h"
 #import "WebBrowserViewController.h"
 
@@ -75,10 +75,11 @@
 
 -(IBAction)switchToWebBrowserView:(id)sender
 {
-    self.contentController = [[ContentController alloc] init];
+    RootViewController *rootviewcontroller = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     //webBrowserViewController.address1 = address1;
     //webBrowserViewController.address2 = address2;
     //[self.webBrowserViewController setTitle:unfixedTerm];
+    [self.navigationController pushViewController:rootviewcontroller animated:YES];
     
 }
 

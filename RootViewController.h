@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainMenuViewController.h"
+#import "MyViewController.h"
 
 @interface RootViewController : UIViewController <UIScrollViewDelegate>
 
