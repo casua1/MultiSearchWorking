@@ -12,6 +12,7 @@
 
 @interface RootViewController : UIViewController <UIScrollViewDelegate>
 
-@property (strong, nonatomic) NSArray *contentList;
+@property (strong, nonatomic) NSString *address1;
+@property (strong, nonatomic) NSString *address2;
 
 @end

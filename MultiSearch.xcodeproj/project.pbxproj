@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F05949117832E5A00BE4AF9 /* WebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F05948F17832E5A00BE4AF9 /* WebBrowserViewController.xib */; };
 		3F0594941783829900BE4AF9 /* MultiSearchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0594921783829900BE4AF9 /* MultiSearchIcon.png */; };
 		3F0594951783829900BE4AF9 /* MultiSearchIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0594931783829900BE4AF9 /* MultiSearchIcon2x.png */; };
 		3F8536FF177CF5A100339D4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8536FE177CF5A100339D4F /* UIKit.framework */; };
@@ -19,24 +18,15 @@
 		3F853711177CF5A100339D4F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F853710177CF5A100339D4F /* Default.png */; };
 		3F853713177CF5A100339D4F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F853712177CF5A100339D4F /* Default@2x.png */; };
 		3F853715177CF5A100339D4F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F853714177CF5A100339D4F /* Default-568h@2x.png */; };
-		3F853718177CF5A100339D4F /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F853717177CF5A100339D4F /* WebBrowserViewController.m */; };
 		3FE457CC1781E3E7000B7C26 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE457CA1781E3E7000B7C26 /* MainMenuViewController.m */; };
 		3FE457CD1781E3E7000B7C26 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE457CB1781E3E7000B7C26 /* MainMenuViewController.xib */; };
 		3FE809F21784BB8700B32588 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE809F01784BB8700B32588 /* RootViewController.m */; };
 		3FE809F71784BB9900B32588 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE809F51784BB9900B32588 /* MyViewController.m */; };
 		3FE809F81784BB9900B32588 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE809F61784BB9900B32588 /* MyViewController.xib */; };
-		3FE809FB1784BE7000B32588 /* content_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FE809FA1784BE7000B32588 /* content_iPhone.plist */; };
-		3FE80A261785C28C00B32588 /* small_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A251785C28B00B32588 /* small_one.png */; };
 		3FE80A281785D3A700B32588 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A271785D3A700B32588 /* RootViewController.xib */; };
-		3FE80A2E1785DB1500B32588 /* small_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A291785DB1300B32588 /* small_five.png */; };
-		3FE80A2F1785DB1500B32588 /* small_four.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2A1785DB1300B32588 /* small_four.png */; };
-		3FE80A301785DB1500B32588 /* small_six.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2B1785DB1400B32588 /* small_six.png */; };
-		3FE80A311785DB1500B32588 /* small_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2C1785DB1400B32588 /* small_three.png */; };
-		3FE80A321785DB1500B32588 /* small_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE80A2D1785DB1500B32588 /* small_two.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F05949017832E5A00BE4AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WebBrowserViewController.xib; sourceTree = "<group>"; };
 		3F0594921783829900BE4AF9 /* MultiSearchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiSearchIcon.png; sourceTree = "<group>"; };
 		3F0594931783829900BE4AF9 /* MultiSearchIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultiSearchIcon2x.png; sourceTree = "<group>"; };
 		3F8536FB177CF5A100339D4F /* MultiSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,8 +42,6 @@
 		3F853710177CF5A100339D4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3F853712177CF5A100339D4F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3F853714177CF5A100339D4F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3F853716177CF5A100339D4F /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
-		3F853717177CF5A100339D4F /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 		3FE457C91781E3E7000B7C26 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		3FE457CA1781E3E7000B7C26 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		3FE457CB1781E3E7000B7C26 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
@@ -62,14 +50,7 @@
 		3FE809F41784BB9900B32588 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = ../MyViewController.h; sourceTree = "<group>"; };
 		3FE809F51784BB9900B32588 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyViewController.m; path = ../MyViewController.m; sourceTree = "<group>"; };
 		3FE809F61784BB9900B32588 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyViewController.xib; path = ../MyViewController.xib; sourceTree = "<group>"; };
-		3FE809FA1784BE7000B32588 /* content_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content_iPhone.plist; sourceTree = "<group>"; };
-		3FE80A251785C28B00B32588 /* small_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_one.png; sourceTree = "<group>"; };
 		3FE80A271785D3A700B32588 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		3FE80A291785DB1300B32588 /* small_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_five.png; sourceTree = "<group>"; };
-		3FE80A2A1785DB1300B32588 /* small_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_four.png; sourceTree = "<group>"; };
-		3FE80A2B1785DB1400B32588 /* small_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_six.png; sourceTree = "<group>"; };
-		3FE80A2C1785DB1400B32588 /* small_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_three.png; sourceTree = "<group>"; };
-		3FE80A2D1785DB1500B32588 /* small_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_two.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +111,6 @@
 				3F85370E177CF5A100339D4F /* AppDelegate.m */,
 				3F0ABB041781E42F0019E214 /* MainMenu */,
 				3FE809F91784BBCD00B32588 /* Page Control */,
-				3FB3ECE71781FC58006FD653 /* WebBrowser */,
 				3F853705177CF5A100339D4F /* Supporting Files */,
 			);
 			path = MultiSearch;
@@ -152,16 +132,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3FB3ECE71781FC58006FD653 /* WebBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				3F853716177CF5A100339D4F /* WebBrowserViewController.h */,
-				3F853717177CF5A100339D4F /* WebBrowserViewController.m */,
-				3F05948F17832E5A00BE4AF9 /* WebBrowserViewController.xib */,
-			);
-			name = WebBrowser;
-			sourceTree = "<group>";
-		};
 		3FE809F91784BBCD00B32588 /* Page Control */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,13 +141,6 @@
 				3FE809F41784BB9900B32588 /* MyViewController.h */,
 				3FE809F51784BB9900B32588 /* MyViewController.m */,
 				3FE809F61784BB9900B32588 /* MyViewController.xib */,
-				3FE80A2B1785DB1400B32588 /* small_six.png */,
-				3FE80A291785DB1300B32588 /* small_five.png */,
-				3FE80A2A1785DB1300B32588 /* small_four.png */,
-				3FE80A2C1785DB1400B32588 /* small_three.png */,
-				3FE80A2D1785DB1500B32588 /* small_two.png */,
-				3FE80A251785C28B00B32588 /* small_one.png */,
-				3FE809FA1784BE7000B32588 /* content_iPhone.plist */,
 			);
 			name = "Page Control";
 			sourceTree = "<group>";
@@ -238,18 +201,10 @@
 				3F853713177CF5A100339D4F /* Default@2x.png in Resources */,
 				3F853715177CF5A100339D4F /* Default-568h@2x.png in Resources */,
 				3FE457CD1781E3E7000B7C26 /* MainMenuViewController.xib in Resources */,
-				3F05949117832E5A00BE4AF9 /* WebBrowserViewController.xib in Resources */,
 				3F0594941783829900BE4AF9 /* MultiSearchIcon.png in Resources */,
 				3F0594951783829900BE4AF9 /* MultiSearchIcon2x.png in Resources */,
 				3FE809F81784BB9900B32588 /* MyViewController.xib in Resources */,
-				3FE809FB1784BE7000B32588 /* content_iPhone.plist in Resources */,
-				3FE80A261785C28C00B32588 /* small_one.png in Resources */,
 				3FE80A281785D3A700B32588 /* RootViewController.xib in Resources */,
-				3FE80A2E1785DB1500B32588 /* small_five.png in Resources */,
-				3FE80A2F1785DB1500B32588 /* small_four.png in Resources */,
-				3FE80A301785DB1500B32588 /* small_six.png in Resources */,
-				3FE80A311785DB1500B32588 /* small_three.png in Resources */,
-				3FE80A321785DB1500B32588 /* small_two.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +217,6 @@
 			files = (
 				3F85370B177CF5A100339D4F /* main.m in Sources */,
 				3F85370F177CF5A100339D4F /* AppDelegate.m in Sources */,
-				3F853718177CF5A100339D4F /* WebBrowserViewController.m in Sources */,
 				3FE457CC1781E3E7000B7C26 /* MainMenuViewController.m in Sources */,
 				3FE809F21784BB8700B32588 /* RootViewController.m in Sources */,
 				3FE809F71784BB9900B32588 /* MyViewController.m in Sources */,
@@ -272,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F05948F17832E5A00BE4AF9 /* WebBrowserViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F05949017832E5A00BE4AF9 /* en */,
-			);
-			name = WebBrowserViewController.xib;
-			sourceTree = "<group>";
-		};
 		3F853707177CF5A100339D4F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

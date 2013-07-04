@@ -7,15 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WebBrowserViewController.h"
+#import "RootViewController.h"
 
-@class ContentController;
+@class RootViewController;
 
 @interface MainMenuViewController : UIViewController
 
-
-//@property (strong, nonatomic) WebBrowserViewController *webBrowserViewController;
-@property (strong, nonatomic) ContentController *contentController;
+@property (strong, nonatomic) RootViewController *rootViewController;
 @property (strong, nonatomic) NSString *address1;
 @property (strong, nonatomic) NSString *address2;
 @property (strong, nonatomic) NSString *unfixedTerm;

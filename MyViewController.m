@@ -18,7 +18,8 @@
 
 @synthesize mainMenuViewController, webView, address;
 
-// load the view nib and initialize the pageNumber ivar
+
+// Load the view nib and initialize the pageNumber ivar.
 - (id)initWithPageNumber:(NSUInteger)page
 {
     if (self = [super initWithNibName:@"MyViewController" bundle:nil])
@@ -28,13 +29,15 @@
     return self;
 }
 
-// set the label and background color when the view has finished loading
+
+// Set the label and background color when the view has finished loading.
 - (void)viewDidLoad
 {
-    if (pageNumber == 0)
-        address = @"http://google.com";
-    else
-        address = @"http://yahoo.com";
+    [super viewDidLoad];
+    [[webView layer] setCornerRadius:10];
+    [webView setClipsToBounds:YES];
+    [[webView layer] setBorderColor: [[UIColor blackColor] CGColor]];
+    [[webView layer] setBorderWidth: 2.0];
     [self startUp:nil];
 }
 
@@ -56,7 +59,7 @@
 
 
 //Does web view thingies.(I don't know how it works, it just does.)
--(BOOL)webView: (UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+-(BOOL)webView: (UIWebView *)browser shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     if (navigationType == UIWebViewNavigationTypeLinkClicked)
     {
@@ -64,7 +67,7 @@
         
         if([[url scheme] isEqualToString:@"http"])
         {
-            [self startUp:nil];
+            [browser loadRequest:[NSURLRequest requestWithURL:url]];
         }
         return NO;
     }
@@ -78,9 +81,9 @@
 }
 
 
--(NSURLRequest*)getRequest:(NSString *)address
+-(NSURLRequest*)getRequest:(NSString *)stringAddress
 {
-    NSURL *url = [NSURL URLWithString:address];
+    NSURL *url = [NSURL URLWithString:stringAddress];
     return [NSURLRequest requestWithURL:url];
 }
 
