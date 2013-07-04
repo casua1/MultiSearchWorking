@@ -14,10 +14,4 @@
 
 @implementation ContentController
 
-- (void)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    [[NSBundle mainBundle] loadNibNamed:@"ContentController" owner:self options:nil];
-}
-
-
 @end

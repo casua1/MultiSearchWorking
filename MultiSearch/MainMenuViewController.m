@@ -7,6 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#include "ContentController.h"
 #import "MainMenuViewController.h"
 #import "WebBrowserViewController.h"
 
@@ -16,7 +17,7 @@
 
 @implementation MainMenuViewController
 
-@synthesize webBrowserViewController, address1, address2, unfixedTerm, fixedTerm, column, pickerView, logo;
+@synthesize contentController, address1, address2, unfixedTerm, fixedTerm, column, pickerView, logo;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -74,11 +75,11 @@
 
 -(IBAction)switchToWebBrowserView:(id)sender
 {
-    self.webBrowserViewController = [[WebBrowserViewController alloc] initWithNibName:@"ContentController" bundle:nil];
-    webBrowserViewController.address1 = address1;
-    webBrowserViewController.address2 = address2;
-    [self.navigationController pushViewController:self.webBrowserViewController animated:YES];
-    [self.webBrowserViewController setTitle:unfixedTerm];
+    self.contentController = [[ContentController alloc] init];
+    //webBrowserViewController.address1 = address1;
+    //webBrowserViewController.address2 = address2;
+    //[self.webBrowserViewController setTitle:unfixedTerm];
+    
 }
 
 
