@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WebBrowserViewController.h"
+#import "RootViewController.h"
 
-@class WebBrowserViewController;
+@class RootViewController;
 
 @interface MainMenuViewController : UIViewController
 
-
-@property (strong, nonatomic) WebBrowserViewController *webBrowserViewController;
+@property (strong, nonatomic) RootViewController *rootViewController;
 @property (strong, nonatomic) NSString *address1;
 @property (strong, nonatomic) NSString *address2;
 @property (strong, nonatomic) NSString *unfixedTerm;
 @property (strong, nonatomic) NSString *fixedTerm;
 @property (strong, nonatomic) NSMutableArray *column;
+@property (strong, nonatomic) IBOutlet UIImageView *logo;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 
 -(IBAction)switchToWebBrowserView:(id)sender;

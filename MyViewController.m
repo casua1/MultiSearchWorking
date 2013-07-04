@@ -1,26 +1,43 @@
 //
-//  ViewController.m
+//  MyViewController.m
 //  MultiSearch
 //
-//  Created by iD Student on 6/27/13.
+//  Created by iD Student on 7/3/13.
 //  Copyright (c) 2013 Phil. All rights reserved.
 //
 
-#import "WebBrowserViewController.h"
+#import "MyViewController.h"
 
-@interface WebBrowserViewController ()
-
+@interface MyViewController ()
+{
+    int pageNumber;
+}
 @end
 
-@implementation WebBrowserViewController
+@implementation MyViewController
 
 @synthesize mainMenuViewController, webView, address;
 
 
+// Load the view nib and initialize the pageNumber ivar.
+- (id)initWithPageNumber:(NSUInteger)page
+{
+    if (self = [super initWithNibName:@"MyViewController" bundle:nil])
+    {
+        pageNumber = page;
+    }
+    return self;
+}
+
+
+// Set the label and background color when the view has finished loading.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [[webView layer] setCornerRadius:10];
+    [webView setClipsToBounds:YES];
+    [[webView layer] setBorderColor: [[UIColor blackColor] CGColor]];
+    [[webView layer] setBorderWidth: 2.0];
     [self startUp:nil];
 }
 
@@ -30,12 +47,6 @@
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStylePlain target: self action:@selector(switchToMainMenuView:)];
     self.navigationItem.leftBarButtonItem = backButton;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -48,7 +59,7 @@
 
 
 //Does web view thingies.(I don't know how it works, it just does.)
--(BOOL)webView: (UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+-(BOOL)webView: (UIWebView *)browser shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     if (navigationType == UIWebViewNavigationTypeLinkClicked)
     {
@@ -56,7 +67,7 @@
         
         if([[url scheme] isEqualToString:@"http"])
         {
-            [self startUp:nil];
+            [browser loadRequest:[NSURLRequest requestWithURL:url]];
         }
         return NO;
     }
@@ -70,15 +81,10 @@
 }
 
 
--(NSURLRequest*)getRequest:(NSString *)address
+-(NSURLRequest*)getRequest:(NSString *)stringAddress
 {
-    NSURL *url = [NSURL URLWithString:address];
+    NSURL *url = [NSURL URLWithString:stringAddress];
     return [NSURLRequest requestWithURL:url];
-}
-
-- (IBAction)changePage:(id)sender
-{
-    
 }
 
 @end
