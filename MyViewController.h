@@ -10,11 +10,14 @@
 
 @interface MyViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UILabel *pageNumberLabel;
+@property (strong, nonatomic) UIViewController *mainMenuViewController;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) NSString *address;
 
-@property (nonatomic, strong) IBOutlet UILabel *numberTitle;
-@property (nonatomic, strong) IBOutlet UIImageView *numberImage;
 
+
+-(BOOL)webView: (UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
+-(NSURLRequest*)getRequest:(NSString *)address;
 - (id)initWithPageNumber:(NSUInteger)page;
 
 @end

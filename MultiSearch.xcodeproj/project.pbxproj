@@ -170,13 +170,13 @@
 				3FE80A271785D3A700B32588 /* RootViewController.xib */,
 				3FE809F41784BB9900B32588 /* MyViewController.h */,
 				3FE809F51784BB9900B32588 /* MyViewController.m */,
+				3FE809F61784BB9900B32588 /* MyViewController.xib */,
 				3FE80A2B1785DB1400B32588 /* small_six.png */,
 				3FE80A291785DB1300B32588 /* small_five.png */,
 				3FE80A2A1785DB1300B32588 /* small_four.png */,
 				3FE80A2C1785DB1400B32588 /* small_three.png */,
 				3FE80A2D1785DB1500B32588 /* small_two.png */,
 				3FE80A251785C28B00B32588 /* small_one.png */,
-				3FE809F61784BB9900B32588 /* MyViewController.xib */,
 				3FE809FA1784BE7000B32588 /* content_iPhone.plist */,
 			);
 			name = "Page Control";

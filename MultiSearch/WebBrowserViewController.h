@@ -12,14 +12,12 @@
 
 @property (strong, nonatomic) UIViewController *mainMenuViewController;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
-@property (strong, nonatomic) IBOutlet UIWebView *webView2;
-@property (strong, nonatomic) NSString *address1;
-@property (strong, nonatomic) NSString *address2;
+@property (strong, nonatomic) NSString *address;
 
 
 
 -(BOOL)webView: (UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
--(NSURLRequest*)getRequest:(NSString *)tempAddress;
+-(NSURLRequest*)getRequest:(NSString *)address;
 -(IBAction)changePage:(id)sender;
 
 

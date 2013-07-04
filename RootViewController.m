@@ -9,8 +9,6 @@
 #import "RootViewController.h"
 #import "MyViewController.h"
 
-static NSString *kNameKey = @"nameKey";
-static NSString *kImageKey = @"imageKey";
 
 @interface RootViewController ()
 
@@ -39,7 +37,7 @@ static NSString *kImageKey = @"imageKey";
     // view controllers are created lazily
     // in the meantime, load the array with placeholders which will be replaced on demand
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
-    NSUInteger numberPages = self.contentList.count;
+    NSUInteger numberPages = 2;
     for (NSUInteger i = 0; i < numberPages; i++)
     {
 		[controllers addObject:[NSNull null]];
@@ -75,7 +73,7 @@ static NSString *kImageKey = @"imageKey";
         [view removeFromSuperview];
     }
     
-    NSUInteger numPages = self.contentList.count;
+    NSUInteger numPages = 2;
     
     // adjust the contentSize (larger or smaller) depending on the orientation
     self.scrollView.contentSize =
@@ -99,8 +97,8 @@ static NSString *kImageKey = @"imageKey";
 - (void)loadScrollViewWithPage:(NSUInteger)page
 {
     NSLog(@"loadScrollViewWithPage initiated.");
-    if (page >= self.contentList.count){
-        NSLog(@"Page is less than contentList.");
+    if (page >= 2){
+        NSLog(@"Page is more than contentList.");
         return;
     }
     NSLog(@"Went past first if");
@@ -131,12 +129,7 @@ static NSString *kImageKey = @"imageKey";
         [controller didMoveToParentViewController:self];
         
         NSLog(@"Added subviews.");
-        
-        NSDictionary *numberItem = [self.contentList objectAtIndex:page];
-        controller.numberImage.image = [UIImage imageNamed:[numberItem valueForKey:kImageKey]];
-        controller.numberTitle.text = [numberItem valueForKey:kNameKey];
-        
-        NSLog(@"Changed Variables.");
+
     }
     
     NSLog(@"Went past third if");

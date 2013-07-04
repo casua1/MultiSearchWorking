@@ -14,7 +14,7 @@
 
 @implementation WebBrowserViewController
 
-@synthesize mainMenuViewController, webView, webView2, address1, address2;
+@synthesize mainMenuViewController, webView, address;
 
 
 - (void)viewDidLoad
@@ -66,8 +66,7 @@
 //Takes fixed url and fires the request.
 -(void)startUp:(id)sender
 {
-    [webView loadRequest:[self getRequest:address1]];
-    [webView2 loadRequest:[self getRequest:address2]];
+    [webView loadRequest:[self getRequest:address]];
 }
 
 
