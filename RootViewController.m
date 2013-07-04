@@ -35,11 +35,11 @@ static NSString *kImageKey = @"imageKey";
     self.contentList = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"%@", contentList);
     
-    NSUInteger numberPages = self.contentList.count;
     
     // view controllers are created lazily
     // in the meantime, load the array with placeholders which will be replaced on demand
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
+    NSUInteger numberPages = self.contentList.count;
     for (NSUInteger i = 0; i < numberPages; i++)
     {
 		[controllers addObject:[NSNull null]];
